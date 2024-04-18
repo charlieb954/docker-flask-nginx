@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  app-1:
+    build: ./analytics/app-1
+    container_name: app-1
+    ports:
+      - "5001:5000"
+    networks:
+      - webapps
+
+  app-2:
+    build: ./analytics/app-2
+    container_name: app-2
+    ports:
+      - "5002:5000"
+    networks:
+      - webapps
+
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+      - ./nginx/index.html:/etc/nginx/html/index.html
+    ports:
+      - "80:80"
+    networks:
+      - webapps
+
+networks:
+  webapps:
