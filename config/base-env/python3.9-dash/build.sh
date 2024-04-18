@@ -1,0 +1,1 @@
+docker build -t python-39-dash:0.1.0 .
