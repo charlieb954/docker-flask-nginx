@@ -12,7 +12,20 @@ $ openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out nginx.cr
 $ chmod 400 nginx.key
 ```
 
+## Deploying the applications
+
+To deploy the applications, just run the following command:
+
+```bash
+make up
+```
+
+To take it down and prune the environment, run the following command:
+
+```bash
+make down
+```
+
 ## TODO
 - Add usage of Docker base-env for containers
-- Add server cert for HTTPS
 - Add examples for other web applications, i.e. Dash, Vizro, Streamlit
