@@ -58,8 +58,8 @@ make certs
 
 This command will ask a series of questions and then create two files
 `nginx/certs/nginx.key` and `nginx/certs/nginx.crt` that are used in the
-`nginx/nginx.conf` to secure the site with HTTPS. To see the commands run, see
-[Makefile](./Makefile).
+`nginx/nginx.conf` to secure the site with HTTPS. To see the commands in more
+detail, see [Makefile](./Makefile).
 
 ## Deploying the applications
 
@@ -81,4 +81,4 @@ To take it down and prune the environment, run the following command:
 make down
 ```
 
-To see the commands run, see [Makefile](./Makefile).
+To see the commands in more detail, see [Makefile](./Makefile).
