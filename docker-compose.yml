@@ -1,6 +1,10 @@
 version: '3.8'
 
 services:
+  base:
+    build: ./config/base-env/python39-flask
+    image: python39-flask:0.1.0
+
   app-1:
     build: ./analytics/app-1
     container_name: app-1
