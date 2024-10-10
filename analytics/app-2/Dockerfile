@@ -1,4 +1,4 @@
-FROM python:3.9-alpine
+FROM python39-flask:0.1.0
 EXPOSE 5000
 COPY /src /app
 WORKDIR /app
